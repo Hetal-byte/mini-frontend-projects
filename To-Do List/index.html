@@ -1,48 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>To-Do List</title>
-  <style>
-    body { font-family: sans-serif; background: #f1f8e9; padding: 2rem; }
-    input { font-size: 1.2rem; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 0.5rem 0; }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Modern To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <h1>To-Do List</h1>
-  <input id="task" placeholder="Add task">
-  <button onclick="addTask()">Add</button>
+<body data-theme="light">
+  <h1>🌿 To-Do List</h1>
+  <div class="input-container">
+    <input id="task" placeholder="Add task" />
+    <button id="addBtn">Add</button>
+  </div>
   <ul id="list"></ul>
-  <script>
-    const list = document.getElementById('list');
-    function addTask() {
-      const task = document.getElementById('task').value;
-      if (!task) return;
-      const li = document.createElement('li');
-      li.textContent = task;
-      li.onclick = () => {
-        li.style.textDecoration = li.style.textDecoration === 'line-through' ? '' : 'line-through';
-        save();
-      };
-      list.appendChild(li);
-      document.getElementById('task').value = '';
-      save();
-    }
-    function save() {
-      localStorage.setItem('todos', list.innerHTML);
-    }
-    function load() {
-      list.innerHTML = localStorage.getItem('todos') || '';
-      Array.from(list.children).forEach(li => {
-        li.onclick = () => {
-          li.style.textDecoration = li.style.textDecoration === 'line-through' ? '' : 'line-through';
-          save();
-        };
-      });
-    }
-    load();
-  </script>
+  <button class="clear-btn" id="clearAllBtn">Clear All</button>
+  <button class="theme-toggle" id="themeToggle">Toggle Dark/Light</button>
+  <script src="script.js"></script>
 </body>
 </html>
