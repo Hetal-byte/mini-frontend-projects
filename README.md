@@ -1,35 +1,53 @@
-# 🌟 Mini Frontend Projects
+# 🌟 Mini Projects
 
-Welcome to **Mini Frontend Projects** — a collection of small, beginner-friendly web apps built using **HTML**, **CSS**, and **JavaScript**.  
-These projects are designed to be simple, fun, and great practice for frontend development!  
-
----
-
-## 📂 Projects
-
-### 1️⃣ Random Quote Generator
-A simple app that displays a random motivational quote every time you click a button.  
-✅ **Tech:** HTML, CSS, JS  
-✅ **Features:**  
-- Randomly selects from a list of quotes  
-- Minimal, clean UI  
-
-📂 Folder: `random-quote-generator/`
+Welcome to **Mini Projects** — a collection of small, beginner-friendly apps built using **HTML**, **CSS**, and **JavaScript**.  
+These projects are perfect for practicing frontend skills like DOM manipulation, basic logic, and styling.
 
 ---
 
-### 2️⃣ Simple Calculator
-A basic calculator that can perform addition, subtraction, multiplication, and division.  
-✅ **Tech:** HTML, CSS, JS  
-✅ **Features:**  
-- Handles basic arithmetic  
-- Simple interactive UI  
+## ✨ Included Projects
 
-📂 Folder: `simple-calculator/`
+---
+
+### 🔢 Simple Calculator  
+A basic calculator that performs addition, subtraction, multiplication, and division.
+
+**Features**
+- Handles basic arithmetic (add, subtract, multiply, divide)
+- Interactive UI with buttons
+- Pure HTML, CSS, and JavaScript
+
+**Folder Structure**
+
+---
+
+### 💬 Simple Quote Generator  
+Displays a random motivational quote at the click of a button.
+
+**Features**
+- Shows random quote on click
+- Simple and clean design
+- Easy to add more quotes
+
+**Folder Structure**
+
+---
+
+### ✅ To-Do List  
+A clean to-do list app to add, mark, and remove tasks.
+
+**Features**
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks
+- Responsive layout
+
+**Folder Structure**
 
 ---
 
 ## 🚀 How to Run
-👉 Clone the repo:
+
+1️⃣ Clone this repository:
 ```bash
-git clone https://github.com/YourUsername/mini-frontend-projects.git
+git clone https://github.com/YourUsername/mini-projects.git
