@@ -1,0 +1,51 @@
+:root {
+  --bg: #ffe4ec;
+  --text: #880e4f;
+  --btn-bg: #f48fb1;
+  --btn-hover: #ec407a;
+}
+
+[data-theme="dark"] {
+  --bg: #212121;
+  --text: #f8bbd0;
+  --btn-bg: #ad1457;
+  --btn-hover: #880e4f;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.quote-box {
+  border: 2px dashed var(--text);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-height: 60px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--btn-bg);
+  color: #fff;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background: var(--btn-hover);
+  transform: scale(1.05);
+}
