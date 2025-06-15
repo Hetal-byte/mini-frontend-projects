@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quote Generator</title>
+  <style>
+    body { font-family: sans-serif; background: #ffe4ec; text-align: center; padding: 2rem; }
+    button { padding: 0.5rem 1rem; font-size: 1.2rem; border-radius: 8px; border: none; background: pink; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>🌸 Random Quote Generator</h1>
+  <p id="quote">Click the button for a quote!</p>
+  <button onclick="generateQuote()">New Quote</button>
+  <script>
+    const quotes = [
+      "Believe you can and you're halfway there.",
+      "Dream big and dare to fail.",
+      "The best way out is always through.",
+      "You miss 100% of the shots you don’t take."
+    ];
+    function generateQuote() {
+      const random = Math.floor(Math.random() * quotes.length);
+      document.getElementById('quote').textContent = quotes[random];
+    }
+  </script>
+</body>
+</html>
