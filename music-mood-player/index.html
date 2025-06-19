@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="container">
+    <div class="top-bar">
+      <h1>🎧 Mood Music Player</h1>
+      <button id="themeToggle">🌙</button>
+    </div>
+
+    <div class="gif-box">
+      <img id="moodGif" src="" alt="Mood GIF" />
+    </div>
+
+    <select id="moodSelect" onchange="changeMood()">
+      <option value="happy">Happy</option>
+      <option value="chill">Chill</option>
+      <option value="sad">Sad</option>
+      <option value="energetic">Energetic</option>
+    </select>
+
+    <h2 id="trackName">🎵 Track:</h2>
+
+    <div class="controls">
+      <button onclick="playMusic()">▶️ Play</button>
+      <button onclick="nextSong()">⏭️ Next</button>
+      <button id="likeBtn">🤍 Like</button>
+    </div>
+
+    <audio id="audioPlayer" controls></audio>
+
+    <div class="volume-control">
+      <label for="volumeSlider">🔊</label>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
